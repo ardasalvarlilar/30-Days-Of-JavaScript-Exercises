@@ -1,0 +1,1 @@
+console.log(typeof name,typeof isDeveloper, typeof age, typeof maritalStatus)
