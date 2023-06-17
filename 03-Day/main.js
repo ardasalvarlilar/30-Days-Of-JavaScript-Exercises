@@ -77,11 +77,69 @@ console.log('----------------------------------------')
 
 console.log('----------------------------------------')
 
-let length = Number(prompt('length of rectangle'))
-let width = Number(prompt('width of rectangle'))
-rectangleArea = 2 * (length + width)
-console.log(`the area of the rectangle is ${rectangleArea}`) // the area of the rectangle is 40
+// let length = Number(prompt('length of rectangle'))
+// let width = Number(prompt('width of rectangle'))
+// rectangleArea = 2 * (length + width)
+// console.log(`the area of the rectangle is ${rectangleArea}`) // the area of the rectangle is 40
 
-let radius = Number(prompt('what is the radius'))
-let circleArea = 2 * Math.PI * (radius **2)
-console.log(`the area of the circle is ${circleArea}`)
+// let radius = Number(prompt('what is the radius'))
+// let circleArea = 2 * Math.PI * (radius **2)
+// console.log(`the area of the circle is ${circleArea}`)
+
+console.log('----------------------------------------')
+
+// let hours = Number(prompt('enter hours'))
+// let ratePerHour = Number(prompt('enter rate per hour'))
+// let earning = hours * ratePerHour
+// console.log(`your weekly earning is ${earning}`) // your weekly earnig is 1120
+
+const myName = 'Arda'
+myName.length > 7
+? console.log('Your name is long')
+: console.log('Your name is short')
+
+const myLastName = 'Şalvarlılar'
+myName.length > myLastName
+? console.log(`your first name ${myName}, is longer than your family name, ${myLastName}`)
+: console.log(`your first name ${myName}, is shorter than your family name, ${myLastName}`)
+
+console.log('----------------------------------------')
+
+let myAge = 21
+let yourAge = 250
+console.log(`you are ${yourAge - myAge} years older than me`)
+
+// let userBirthYear = Number(prompt('your birth year'))
+// let thisYear = new Date()
+// let inYear = thisYear.getFullYear()
+// let userAge = inYear - userBirthYear 
+// userAge >= 18
+//   ? console.log(`you are ${userAge}. You are old enaugh to drive`)
+//   : console.log(`you are ${userAge}. You will be allowed to drive after ${18 - userAge} years.`)
+
+console.log('----------------------------------------')
+
+let newDate = new Date()
+let seconds = newDate.getTime()
+const maxYear = 100
+const maxSecondsCanLive = maxYear * seconds
+
+// let userAge = Number(prompt('your age'))
+// console.log(`you lived ${userAge * seconds} seconds. Your remaining seconds are ${(maxYear - userAge) * seconds} seconds.`)
+
+console.log('----------------------------------------')
+
+let thisNewYear = new Date()
+let thisYear = thisNewYear.getFullYear()
+let thisMonth = thisNewYear.getMonth()
+let thisDay = thisNewYear.getDay()
+let thisHour = thisNewYear.getHours()
+let thisMinutes = thisNewYear.getMinutes()
+
+console.log(thisYear+'-'+thisMonth+'-'+thisDay+'-'+thisHour+':'+thisMinutes)
+
+let d
+d = new Date('2023-06-17 07:05')
+// d = new Date('17-06-2023 13:33')
+// d = new Date('17/06/2023 13:33')
+console.log(d)
